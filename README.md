@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/WilliamSampaio/flaskeleton/master/assets/flaskeleton_1.png" alt="Flaskeleton CLI" style="height: 150px; width:150px;"/><br>
 
-CLI tool for creating Flask projects with the Flaskeleton base.
+CLI tool for creating Flask projects with the [Flaskeleton](https://github.com/WilliamSampaio/flaskeleton) base.
 
 ## Usage
 
