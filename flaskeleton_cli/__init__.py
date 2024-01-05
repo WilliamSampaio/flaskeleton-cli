@@ -1,6 +1,8 @@
 import os
+
 from rich.console import Console
-from typer import Context, Exit, Option, Typer, Argument
+from typer import Argument, Context, Exit, Option, Typer
+
 from .core import clone_flaskeleton
 
 __version__ = '0.1.0'
@@ -11,7 +13,9 @@ app = Typer()
 
 def version_func(flag):
     if flag:
-        console.print(f"\n[b][yellow]Flaskeleton CLI version {__version__}[/]\n")
+        console.print(
+            f'\n[b][yellow]Flaskeleton CLI version {__version__}[/]\n'
+        )
         raise Exit(code=0)
 
 
@@ -22,10 +26,11 @@ def main(
 ):
     pass
 
+
 @app.command()
 def create(
-    folder: str = Argument('flaskeleton', help="Project folder name"),
-    path: str = Option(os.getcwd(), is_flag=True)
+    folder: str = Argument('flaskeleton', help='Project folder name'),
+    path: str = Option(os.getcwd(), is_flag=True),
 ):
     statuscode = clone_flaskeleton(path, folder)
     if statuscode != 0:
