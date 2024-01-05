@@ -5,7 +5,7 @@ from typer import Argument, Context, Exit, Option, Typer
 
 from .core import clone_flaskeleton
 
-__version__ = '0.1.0'
+__version__ = '0.1.3'
 
 console = Console()
 app = Typer()
