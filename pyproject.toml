@@ -7,7 +7,7 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.scripts]
-flaskeleton = "flaskeleton_cli"
+flaskeleton = "flaskeleton_cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.11"
